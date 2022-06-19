@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  rootedcyber:
+    build: .
+    environment:
+      REDIS_URI: $REDIS_URI
+      REDIS_PASSWORD: $REDIS_PASSWORD
+      SESSION: $SESSION
+      API_ID: 19280633 # defaults to None
+      API_HASH: a6b9fc95f9b5904aea0f9a43aa0d0378  # defaults to None
+      MONGO_URI: $MONGO_URI  # defaults to None
+      BOT_TOKEN: 5523130275:AAEpRqHHXMIOA-o3gHsow_gNnq5Hp8b69SA # Not mandatory
+      LOG_CHANNEL: $LOG_CHANNEL # Not mandatory
+      DATABASE_URL: $DATABASE_URL  # defaults to None
+      OKTETO_TOKEN: $OKTETO_TOKEN
